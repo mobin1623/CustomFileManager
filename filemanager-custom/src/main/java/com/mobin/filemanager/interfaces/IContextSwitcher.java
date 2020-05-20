@@ -3,7 +3,7 @@ package com.mobin.filemanager.interfaces;
 import com.mobin.filemanager.Constants;
 
 /**
- * Created by Aditya on 4/18/2017.
+ * Created by Mobin on 20/05/2020.
  */
 public interface IContextSwitcher {
     public void changeBottomNavMenu(Constants.CHOICE_MODE multiChoice);

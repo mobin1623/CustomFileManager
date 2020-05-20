@@ -9,7 +9,8 @@ import java.io.File;
 import java.util.List;
 
 /**
- * Created by adik on 10/18/2015.
+ * Created by Mobin on 20/05/2020.
+ *
  */
 public class Constants {
 
@@ -42,7 +43,7 @@ public class Constants {
     }
 
     public static final String APP_PREMISSION_KEY = "APP_PERMISSIONS";
-    public static final String FILE_SELECTED_BROADCAST = "com.adityak.filebrowser.FILE_SELECTED_BROADCAST";
+    public static final String FILE_SELECTED_BROADCAST = "com.mobin.filemanager.FILE_SELECTED_BROADCAST";
     public static final String INITIAL_DIRECTORY = "INITIAL_DIRECTORY";
     public static final String ALLOWED_FILE_EXTENSIONS = "ALLOWED_FILE_EXTENSIONS";
     public static final String BROADCAST_SELECTED_FILE = "BROADCAST_SELECTED_FILE";

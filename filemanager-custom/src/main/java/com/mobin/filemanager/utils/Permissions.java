@@ -1,7 +1,7 @@
 package com.mobin.filemanager.utils;
 
 /**
- * Created by Aditya on 4/15/2017.
+ * Created by Mobin on 20/05/2020
  */
 
 import android.app.Activity;
@@ -20,9 +20,7 @@ import com.mobin.filemanager.R;
 
 import java.util.ArrayList;
 
-/**
- * Created by Aditya on 4/14/2017.
- */
+
 public class Permissions extends AppCompatActivity {
 
     public static final int APP_PERMISSIONS_REQUEST = 0;

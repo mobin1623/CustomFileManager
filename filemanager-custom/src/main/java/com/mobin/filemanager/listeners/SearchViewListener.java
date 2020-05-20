@@ -5,7 +5,7 @@ import android.support.v7.widget.SearchView;
 import com.mobin.filemanager.adapters.CustomAdapter;
 
 /**
- * Created by Aditya on 4/30/2017.
+ * Created by Mobin on 20/05/2020.
  */
 public class SearchViewListener implements SearchView.OnQueryTextListener {
 

@@ -6,7 +6,7 @@ import android.content.Context;
 import com.mobin.filemanager.NavigationHelper;
 
 /**
- * Created by Aditya on 4/16/2017.
+ * Created by Mobin on 20/05/2020
  */
 public class UIUpdateHelper {
 

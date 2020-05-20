@@ -1,7 +1,7 @@
 package com.mobin.filemanager.interfaces;
 
 /**
- * Created by Aditya on 4/15/2017.
+ * Created by Mobin on 20/05/2020
  */
 public interface ITrackSelection {
     boolean isSelected();
