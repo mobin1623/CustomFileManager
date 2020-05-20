@@ -1,0 +1,2 @@
+rootProject.name='FileManager-Mobin'
+include ':app', ':filemanager-custom'

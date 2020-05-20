@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobin.filemanager">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity
+            android:name="com.mobin.filemanager.FileBrowser"
+            android:theme="@style/FileBrowserTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+            />
+        </activity>
+
+        <activity
+            android:name="com.mobin.filemanager.FolderChooser"
+            android:theme="@style/FileBrowserTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                />
+        </activity>
+
+        <activity
+            android:name="com.mobin.filemanager.FileChooser"
+            android:theme="@style/FileBrowserTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <activity
+            android:name="com.mobin.filemanager.FileBrowserWithCustomHandler"
+            android:theme="@style/FileBrowserTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <activity android:name="com.mobin.filemanager.utils.Permissions" android:theme="@style/Theme.AppCompat.Translucent" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/filebrowser_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

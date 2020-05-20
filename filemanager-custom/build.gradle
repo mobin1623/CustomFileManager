@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+
+ext {
+    PUBLISH_GROUP_ID = 'com.mobin'
+    PUBLISH_ARTIFACT_ID = 'browsemyfiles'
+    PUBLISH_VERSION = '1.9'
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.beardedhen:androidbootstrap:2.3.1'
+    implementation 'com.roughike:bottom-bar:2.3.1'
+    implementation 'com.simplecityapps:recyclerview-fastscroll:1.0.20'
+    implementation files('libs/commons-io-2.6.jar')
+}
+
+//apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
