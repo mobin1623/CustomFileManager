@@ -146,22 +146,22 @@ public class FileBrowserWithCustomHandler extends AppCompatActivity implements O
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        if (item.getItemId() == R.id.action_showfoldersizes) {
-            if (AssortedUtils.GetPrefs(Constants.SHOW_FOLDER_SIZE, mContext).equalsIgnoreCase("true"))
-                AssortedUtils.SavePrefs(Constants.SHOW_FOLDER_SIZE, "false", mContext);
-            else
-                AssortedUtils.SavePrefs(Constants.SHOW_FOLDER_SIZE, "true", mContext);
-            onFileChanged(mNavigationHelper.getCurrentDirectory());
-        }
-        else if (item.getItemId() == R.id.action_newfolder) {
-            UIUtils.showEditTextDialog(this, getString(R.string.new_folder), "", new IFuncPtr(){
-                @Override
-                public void execute(final String val) {
-                    io.createDirectory(new File(mNavigationHelper.getCurrentDirectory(),val.trim()));
-                }
-            });
-        }
-        else if (item.getItemId() == R.id.action_paste) {
+//        if (item.getItemId() == R.id.action_showfoldersizes) {
+//            if (AssortedUtils.GetPrefs(Constants.SHOW_FOLDER_SIZE, mContext).equalsIgnoreCase("true"))
+//                AssortedUtils.SavePrefs(Constants.SHOW_FOLDER_SIZE, "false", mContext);
+//            else
+//                AssortedUtils.SavePrefs(Constants.SHOW_FOLDER_SIZE, "true", mContext);
+//            onFileChanged(mNavigationHelper.getCurrentDirectory());
+//        }
+//        else if (item.getItemId() == R.id.action_newfolder) {
+//            UIUtils.showEditTextDialog(this, getString(R.string.new_folder), "", new IFuncPtr(){
+//                @Override
+//                public void execute(final String val) {
+//                    io.createDirectory(new File(mNavigationHelper.getCurrentDirectory(),val.trim()));
+//                }
+//            });
+//        }else
+         if (item.getItemId() == R.id.action_paste) {
             if (op.getOperation() == Operations.FILE_OPERATIONS.NONE) {
                 UIUtils.ShowToast(mContext.getString(R.string.no_operation_error), mContext);
             }

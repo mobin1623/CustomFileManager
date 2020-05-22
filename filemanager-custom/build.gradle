@@ -1,10 +1,6 @@
 apply plugin: 'com.android.library'
 
-ext {
-    PUBLISH_GROUP_ID = 'com.mobin'
-    PUBLISH_ARTIFACT_ID = 'browsemyfiles'
-    PUBLISH_VERSION = '1.9'
-}
+
 
 android {
     compileSdkVersion 27
